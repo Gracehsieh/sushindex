@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>SUSHiNDEX</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100|Roboto+Condensed:700" rel="stylesheet" type="text/css">
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+        <nav>
+            <ul>
+                <li><a href="#intro"><span class="nav-dot"></span><span class="nav-label">Intro</span></a></li>
+                <!-- <li><a href="#slide01"><span class="nav-dot"></span><span class="nav-label">Images</span></a></li>
+                <li><a href="#slide02"><span class="nav-dot"></span><span class="nav-label">Position and Timing</span></a></li> -->
+                <li><a href="#slide03"><span class="nav-dot"></span><span class="nav-label">Participate</span></a></li>
+            </ul>
+        </nav>
+        
+<%= yield %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+
+
+</body>
+</html>
